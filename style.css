@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* Paleta monocromática */
+/* refêrencia, tudo que eu colocar em root servirá para o documento inteiro e semper começa com: -- */
+:root {
+    --cor0: #e3dbff;
+    --cor1: #cac3eb;
+    --cor2: #b2abd7;
+    --cor3: #9992c3;
+    --cor4: #807aaf;
+
+}
+/* *= todos os elementos, configuração global.*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* Corpo da página */
+body {
+    background-color: whitesmoke;
+}
+
+p{
+    text-align:center;
+}
+/* Cabeçalho */
+header {
+    /* fundo em degradê*/
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    /* altura mínima: */
+    min-height: 150px;
+    /* texto alinhado(centralizado) */
+    text-align: center;
+    /* espaço entre o conteúdo e a borda. Padding=preenchimento */
+    padding-top: 30px;
+
+}
+/* Parágrafo dentro do header */
+header>p {
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* tamanho da fonte */
+    font-size: 1.2em;
+    /* largura máxima */
+    max-width: 500px;
+    /* margem automática */
+    margin: auto;
+
+}
+/* h1 dentro do header */
+header>h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    /* sombra no texto */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.425);
+
+}
+/* Menu de navegação */
+nav {
+    background-color: #807aaf;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    /* caixa de sombra no menu de navegação */
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.425);
+}
+/* link dentro da nav */
+nav>a {
+    color: white;
+    padding: 10px;
+    /* perde o sublinhado */
+    text-decoration: none;
+    /* fonte em negrito */
+    font-weight: bold;
+    /* quando for passar o mouse em cima, o tempo de transição será de 0.5 segundos */
+    transition-duration: 0.5s;
+}
+/* a:hover = quando eu passar o mouse no link */
+nav>a:hover {
+    background-color: #9992c3;
+    color: black;
+    /* borda arredondada */
+    border-radius: 10px;
+}
+
+main {
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Degradê da cor x até cor x para o fundo do h2 */
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+}
+
+h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+table {
+    border: 2px solid black;
+    border-radius: 7px;
+    border-color: rgba(106, 16, 148, 0.562);
+    border-style: groove;
+    background-color: #e3dbff;
+}
+
+
+footer {
+    background-color: #807aaf;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
